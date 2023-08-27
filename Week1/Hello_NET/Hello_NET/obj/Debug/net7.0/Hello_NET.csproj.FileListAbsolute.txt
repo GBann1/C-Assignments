@@ -1,0 +1,15 @@
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\bin\Debug\net7.0\Hello_NET.exe
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\bin\Debug\net7.0\Hello_NET.deps.json
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\bin\Debug\net7.0\Hello_NET.runtimeconfig.json
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\bin\Debug\net7.0\Hello_NET.dll
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\bin\Debug\net7.0\Hello_NET.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.dll
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\refint\Hello_NET.dll
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\Hello_NET.genruntimeconfig.cache
+C:\Users\GT Bannon\C-Sharp Stack\Week1\Hello_NET\Hello_NET\obj\Debug\net7.0\ref\Hello_NET.dll
