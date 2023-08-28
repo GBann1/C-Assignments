@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Hello_NET
-build_property.ProjectDir = c:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Hello_NET\Hello_NET\
+build_property.RootNamespace = Fundamentals1
+build_property.ProjectDir = C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals1\Fundamentals1\
