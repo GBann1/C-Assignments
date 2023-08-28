@@ -1,0 +1,15 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\bin\Debug\net7.0\DebuggingPractice.exe
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\bin\Debug\net7.0\DebuggingPractice.deps.json
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\bin\Debug\net7.0\DebuggingPractice.runtimeconfig.json
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\bin\Debug\net7.0\DebuggingPractice.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\bin\Debug\net7.0\DebuggingPractice.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\refint\DebuggingPractice.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\DebuggingPractice.genruntimeconfig.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DebuggingPractice\obj\Debug\net7.0\ref\DebuggingPractice.dll
