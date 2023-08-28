@@ -1,0 +1,15 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\bin\Debug\net7.0\Fundamentals2.exe
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\bin\Debug\net7.0\Fundamentals2.deps.json
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\bin\Debug\net7.0\Fundamentals2.runtimeconfig.json
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\bin\Debug\net7.0\Fundamentals2.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\bin\Debug\net7.0\Fundamentals2.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\refint\Fundamentals2.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\Fundamentals2.genruntimeconfig.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\Fundamentals2\obj\Debug\net7.0\ref\Fundamentals2.dll
