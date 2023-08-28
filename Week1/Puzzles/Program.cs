@@ -10,6 +10,7 @@ static string CoinFlip()
 }
 Console.WriteLine(CoinFlip());
 
+//Dice roll
 static int DiceRoll(int DiceSides)
 {
     Random rand = new Random();
