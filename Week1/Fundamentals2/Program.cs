@@ -25,9 +25,10 @@ iceCream.RemoveAt(2);
 Console.WriteLine(iceCream.Count);
 
 // User Dictionary
+Random rand = new Random();
 Dictionary<string,string> people = new Dictionary<string,string>();
 for(int i=0;i<strArr.Length;i++){
-    people.Add(strArr[i],iceCream[i]);
+    people.Add(strArr[i],iceCream[rand.Next(0,iceCream.Count)]);
 }
 foreach(KeyValuePair<string,string> person in people){
     Console.WriteLine($"{person.Key} - {person.Value}");
