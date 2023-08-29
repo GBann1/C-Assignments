@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\GameDeveloper2\\GameDeveloper2.csproj": {}
+    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\GameDeveloper2\\GameDeveloper2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\GameDeveloper2\\GameDeveloper2.csproj": {
+    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\GameDeveloper2\\GameDeveloper2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\GameDeveloper2\\GameDeveloper2.csproj",
+        "projectUniqueName": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\GameDeveloper2\\GameDeveloper2.csproj",
         "projectName": "GameDeveloper2",
-        "projectPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\GameDeveloper2\\GameDeveloper2.csproj",
+        "projectPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\GameDeveloper2\\GameDeveloper2.csproj",
         "packagesPath": "C:\\Users\\GT Bannon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\GameDeveloper2\\obj\\",
+        "outputPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\GameDeveloper2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

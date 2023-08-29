@@ -1,14 +1,12 @@
-using Internal;
-
 public class Enemy
 {
     public string Name;
-    public int Health;
+    public int Health=100;
     public List<Attack> AttackList;
-    public Enemy(string name)
+    public Enemy(string name, int health)
     {
         Name = name;
-        Health = 100;
+        Health = health;
         AttackList = new List<Attack>();
     }
 
@@ -17,7 +15,7 @@ public class Enemy
         Random rand = new Random();
         return AttackList[rand.Next(AttackList.Count)];
     }
-    public void PreformAttack(Enemy Target, Attack ChosenAttack)
+    public virtual void PerformAttack(Enemy Target, Attack ChosenAttack)
     {
         Target.Health -= ChosenAttack.DamageAmount;
         Console.WriteLine($"{Name} attacks {Target.Name}, dealing {ChosenAttack.DamageAmount} damage and reducing {Target.Name}'s health to {Target.Health}!!");

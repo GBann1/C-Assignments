@@ -1,0 +1,15 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\bin\Debug\net7.0\GameDeveloper2.exe
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\bin\Debug\net7.0\GameDeveloper2.deps.json
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\bin\Debug\net7.0\GameDeveloper2.runtimeconfig.json
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\bin\Debug\net7.0\GameDeveloper2.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\bin\Debug\net7.0\GameDeveloper2.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\refint\GameDeveloper2.dll
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.pdb
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\GameDeveloper2.genruntimeconfig.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\GameDeveloper2\obj\Debug\net7.0\ref\GameDeveloper2.dll
