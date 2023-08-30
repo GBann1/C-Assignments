@@ -1,6 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
-app.MapGet("/", () => "This is my Index");
+app.UseStaticFiles();
+app.UserRouting();
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "defualt",
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
 
 app.Run();
