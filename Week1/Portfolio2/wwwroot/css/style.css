@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+#profilepic {
+    width: 200px;
+}
+.sides{
+    display: flex;
+    width: 850px;
+    margin: 0px auto;
+}
+.side {
+    flex: 1;
+}
+
+.box {
+    width: 850px;
+    height: 675px;
+    padding: 5px;
+    overflow-y: scroll;
+    margin: 0px auto;
+    outline: 1px solid black;
+}
+.projectImgs{
+    width: 175px;
+}
+.projectDiv {
+    display: flex;
+}
+
+.form {
+    width: 250px;
+    margin: 0px auto;
+}
