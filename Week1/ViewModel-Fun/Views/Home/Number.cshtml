@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model NumbersModel
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Numbers page</p>
+    @foreach(int num in Model.NumArr)
+    {
+        <p>@num</p>
+    }
+    
+    
+</div>
