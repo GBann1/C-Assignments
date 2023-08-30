@@ -24,12 +24,18 @@ public class HomeController : Controller
     {
         if(ModelState.IsValid)
         {
-            return RedirectToAction("Display",submit);
+            return RedirectToAction("Display", submit);
         }
         else
         {
             return View("Index");
         }
+    }
+
+    [HttpGet("Display")]
+    public IActionResult Display(SurveyModel submit)
+    {
+        return View(submit);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

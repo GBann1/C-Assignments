@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DojoSurvey_Validations.props" />
+</Project>

@@ -6,34 +6,34 @@
 <div class="text-center">
     <form action="submission" method="post">
             <div>
-                <label asp-for="name"></label>
-                <input asp-for="name"/>
-                <span asp-validation-for="name"></span>
+                <label asp-for="Name"></label>
+                <input asp-for="Name"/>
+                <span asp-validation-for="Name"></span>
             </div>
             <div>
-                <label asp-for="location"></label>
-                <select asp-for="location" id="location">
+                <label asp-for="Location"></label>
+                <select asp-for="Location" id="Location">
                     <option value="San Jose">San Jose</option>
                     <option value="NYC">NYC</option>
                     <option value="St. Paul">St. Paul</option>
                     <option value="Austin">Austin</option>
                 </select>
-                <span asp-validation-for="location"></span>
+                <span asp-validation-for="Location"></span>
             </div>
             <div>
-                <label asp-for="language"></label>
-                <select asp-for="language" id="language">
+                <label asp-for="Language"></label>
+                <select asp-for="Language" id="Language">
                     <option value="C#">C#</option>
                     <option value="Python">Python</option>
                     <option value="JavaScript">JavaScript</option>
                     <option value="Other">Other</option>
                 </select>
-                <span asp-validation-for="language"></span>
+                <span asp-validation-for="Language"></span>
             </div>
             <div>
-                <label asp-for="comment"></label>
-                <textarea id="comment" asp-for="comment" rows="10" cols="30"></textarea>
-                <span asp-validation-for="comment"></span>
+                <label asp-for="Comment"></label>
+                <textarea id="Comment" asp-for="Comment" rows="10" cols="30"></textarea>
+                <span asp-validation-for="Comment"></span>
             </div>
             <input type="submit" value="Submit">
         </form>
