@@ -13,14 +13,17 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    [HttpGet("/")]
+    public ViewResult Index()
     {
-        return View();
+        return View("Index");
     }
-
-    public IActionResult Privacy()
+    
+    [HttpPost("submission")]
+    public IActionResult Submission(SurveyModel submit)
     {
-        return View();
+        
+        return View("Display",submit);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
