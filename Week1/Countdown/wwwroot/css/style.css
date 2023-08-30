@@ -13,5 +13,6 @@ h1 {
 .side{
     flex: 1;
     outline: 1px solid black;
+    border-radius: 5px;
     margin: 15px;
 }

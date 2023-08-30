@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\Countdown.csproj": {}
+    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\Countdown.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\Countdown.csproj": {
+    "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\Countdown.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\Countdown.csproj",
+        "projectUniqueName": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\Countdown.csproj",
         "projectName": "Countdown",
-        "projectPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\Countdown.csproj",
+        "projectPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\Countdown.csproj",
         "packagesPath": "C:\\Users\\GT Bannon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\obj\\",
+        "outputPath": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

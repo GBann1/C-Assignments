@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/vIRCeYF4Ldn4aA2JkdcyurFBXX3N2Io8Y+sKckRbj8=",
+  "Hash": "P3NF8kp6ETkuHnMD1llD4hSG4gxQr98OOEEA5EF+Yrw=",
   "Source": "Countdown",
   "BasePath": "_content/Countdown",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Countdown\\wwwroot",
       "Source": "Countdown",
-      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\wwwroot\\",
       "BasePath": "_content/Countdown",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\wwwroot\\css\\style.css",
       "SourceId": "Countdown",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\Week1\\Countdown\\wwwroot\\",
       "BasePath": "_content/Countdown",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
