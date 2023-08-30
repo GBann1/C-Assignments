@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ir4bBX/XwBJgBMXMZtWEQVpCxRJLq4dkr1U9sNQ9EFY=",
+  "Source": "DojoSurvey",
+  "BasePath": "_content/DojoSurvey",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DojoSurvey\\wwwroot",
+      "Source": "DojoSurvey",
+      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\DojoSurvey\\wwwroot\\",
+      "BasePath": "_content/DojoSurvey",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
