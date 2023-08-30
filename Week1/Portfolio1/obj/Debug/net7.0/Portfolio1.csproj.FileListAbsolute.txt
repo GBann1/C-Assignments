@@ -1,0 +1,6 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\Portfolio1\obj\Debug\net7.0\Portfolio1.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\Portfolio1\obj\Debug\net7.0\Portfolio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\Portfolio1\obj\Debug\net7.0\Portfolio1.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\Portfolio1\obj\Debug\net7.0\Portfolio1.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\Portfolio1\obj\Debug\net7.0\Portfolio1.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\week1\Portfolio1\obj\Debug\net7.0\Portfolio1.MvcApplicationPartsAssemblyInfo.cache
