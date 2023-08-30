@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using DojoSurvey_Model.Models;
+using DojoSurvey_Validations.Models;
 
-namespace DojoSurvey_Model.Controllers;
+namespace DojoSurvey_Validations.Controllers;
 
 public class HomeController : Controller
 {
@@ -22,8 +22,14 @@ public class HomeController : Controller
     [HttpPost("submission")]
     public IActionResult Submission(SurveyModel submit)
     {
-        
-        return View("Display",submit);
+        if(ModelState.IsValid)
+        {
+            return RedirectToAction("Display",submit);
+        }
+        else
+        {
+            return View("Index");
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

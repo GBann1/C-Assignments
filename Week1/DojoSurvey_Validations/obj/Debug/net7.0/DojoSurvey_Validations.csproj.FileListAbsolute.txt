@@ -1,0 +1,8 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.RazorAssemblyInfo.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week1\DojoSurvey_Validations\obj\Debug\net7.0\DojoSurvey_Validations.RazorAssemblyInfo.cs

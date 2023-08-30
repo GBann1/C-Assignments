@@ -1,34 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model SurveyModel 
 
 <div class="text-center">
     <form action="submission" method="post">
             <div>
-                <label for="name">Your Name: </label>
-                <input type="text" name="name"/>
+                <label asp-for="name"></label>
+                <input asp-for="name"/>
+                <span asp-validation-for="name"></span>
             </div>
             <div>
-                <label for="location">Dojo Location: </label>
-                <select name="location" id="location">
+                <label asp-for="location"></label>
+                <select asp-for="location" id="location">
                     <option value="San Jose">San Jose</option>
                     <option value="NYC">NYC</option>
                     <option value="St. Paul">St. Paul</option>
                     <option value="Austin">Austin</option>
                 </select>
+                <span asp-validation-for="location"></span>
             </div>
             <div>
-                <label for="language">Favorite Language: </label>
-                <select name="language" id="language">
+                <label asp-for="language"></label>
+                <select asp-for="language" id="language">
                     <option value="C#">C#</option>
                     <option value="Python">Python</option>
                     <option value="JavaScript">JavaScript</option>
                     <option value="Other">Other</option>
                 </select>
+                <span asp-validation-for="language"></span>
             </div>
             <div>
-                <label for="comment">Comment (opt): </label>
-                <textarea id="comment" name="comment" rows="10" cols="30"></textarea>
+                <label asp-for="comment"></label>
+                <textarea id="comment" asp-for="comment" rows="10" cols="30"></textarea>
+                <span asp-validation-for="comment"></span>
             </div>
             <input type="submit" value="Submit">
         </form>
