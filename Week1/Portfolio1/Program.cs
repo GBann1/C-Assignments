@@ -3,7 +3,7 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 app.UseStaticFiles();
-app.UserRouting();
+app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
