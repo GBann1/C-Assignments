@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "/vIRCeYF4Ldn4aA2JkdcyurFBXX3N2Io8Y+sKckRbj8=",
+  "Source": "Countdown",
+  "BasePath": "_content/Countdown",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Countdown\\wwwroot",
+      "Source": "Countdown",
+      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\wwwroot\\",
+      "BasePath": "_content/Countdown",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\wwwroot\\css\\style.css",
+      "SourceId": "Countdown",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GT Bannon\\C-Sharp Stack\\Assignments\\week1\\Countdown\\wwwroot\\",
+      "BasePath": "_content/Countdown",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}

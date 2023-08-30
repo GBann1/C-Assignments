@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+.page{
+    width: 850px;
+    margin: 0px auto;
+    text-align: center;
+}
+.sides{
+    display: flex;
+    text-align: center;
+}
+.side{
+    flex: 1;
+    outline: 1px solid black;
+    margin: 15px;
+}

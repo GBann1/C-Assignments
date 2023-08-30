@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Countdown</title>
+</head>
+<body>
+    @{
+        DateTime CurrentTime = DateTime.Now;
+        string FormattedStartTime = CurrentTime.ToString("MMM d, yyyy h:mm tt");
+        string FormattedEndTime = ViewBag.FutureDate.ToString("MMM d, yyyy h:mm tt");
+        TimeSpan CountDown = ViewBag.FutureDate - CurrentTime;
+        int Days = CountDown.Days;
+        int Hours = CountDown.Hours;
+        int Minutes = CountDown.Minutes;
+    }
+    <h1>Countdown Timer</h1>
+    <div class="page">
+        <div class="sides">
+            <div class="side">
+                <h2>Start Time</h2>
+                <p>@FormattedStartTime</p>
+            </div>
+            <div class="side">
+                <h2>End Time</h2>
+                <p>@FormattedEndTime</p>
+            </div>
+        </div>
+        <h3>Time Remaining</h3>
+        <p>@Days Day(s), @Hours Hour(s), @Minutes Minute(s) Remaining</p>
+    </div>
+</body>
+</html>
