@@ -227,7 +227,14 @@ class SinglyLinkedList {
      * @returns {boolean}
      */
     containsRecursive(val, current = this.head) {
-        
+        if (!current)
+        {
+            return false;
+        }
+        if (current.data === val){
+            return true;
+        }
+        return this.containsRecursive(val, current.next);
     }
 
 }
