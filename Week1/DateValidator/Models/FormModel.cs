@@ -23,7 +23,7 @@ public class DatePassedAttribute : ValidationAttribute
 {
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
-        if (value is DateTime date)
+        if (value is DateTime date || !value) // Will this handle my nulls?
         {
             DateTime CurrentTime = DateTime.Now;
             if (date >= CurrentTime)

@@ -23,15 +23,11 @@
         </div>
         <div>
             <form action="/Submit" method="post">
-                <input type="hidden"  name="submission" value="99"/>
+                <input type="hidden"  name="submission" value="x2"/>
                 <input type="submit" value="x2"/>
             </form>
-            @{
-                Random rand = new Random();
-                int randVal = rand.Next(1,11);
-            }
             <form action="/Submit" method="post">
-                <input type="hidden" name="submission"  value="@randVal"/>
+                <input type="hidden" name="submission"  value="randVal"/>
                 <input type="submit" value="-1"/>
             </form>
         </div>
