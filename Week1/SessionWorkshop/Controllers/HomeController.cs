@@ -44,12 +44,15 @@ public class HomeController : Controller
         return RedirectToAction("Dashboard");
     }
 
-
-
     // Renders the dashboard view
     [HttpGet("Dashboard")]
     public IActionResult Dashboard()
     {
+        // Idk how to make sure something is valid in Session
+        string? name = HttpContext.Session.GetString("Name");
+        if (name == null){
+            return RedirectToAction("Index");
+        }
         return View();
     }
 
