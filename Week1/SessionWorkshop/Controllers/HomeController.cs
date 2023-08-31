@@ -19,8 +19,10 @@ public class HomeController : Controller
     public IActionResult Login()
     {
         HttpContext.Session.SetString("Name", "Gordon");
+        HttpContext.Session.SetInt32("Number", 22);
         return RedirectToAction("Dashboard");
     }
+
 
     // Does the submission work to mod the Number in session
     [HttpGet("Submit")]
