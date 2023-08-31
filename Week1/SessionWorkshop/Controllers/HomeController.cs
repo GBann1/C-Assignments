@@ -24,7 +24,7 @@ public class HomeController : Controller
     }
 
     // Does the submission work to mod the Number in session
-    [HttpGet("Submit")]
+    [HttpPost("Submit")]
     public IActionResult Submit()
     {
         // I don't know how to set a default and then overwrite it
