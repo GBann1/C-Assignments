@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SessionWorkshop.Models;
 
 namespace SessionWorkshop.Controllers;
@@ -16,19 +14,24 @@ public class HomeController : Controller
 
     // Does the work & redirects to the dashboard
     [HttpPost("Login")]
-    public IActionResult Login()
+    public IActionResult Login(string name)
     {
-        HttpContext.Session.SetString("Name", "Gordon");
+        HttpContext.Session.SetString("Name", name);
         HttpContext.Session.SetInt32("Number", 22);
         return RedirectToAction("Dashboard");
     }
 
     // Does the submission work to mod the Number in session
     [HttpPost("Submit")]
-    public IActionResult Submit()
+    public IActionResult Submit(string submission)
     {
-        // I don't know how to set a default and then overwrite it
-        // HttpContext.Session.SetInt32("Number", (HttpContext.Session.GetInt32("Number")+"###HIDDENINPUTVALUE###"));
+        // Add the value from the Hidden Input to the value in session
+        if (int.TryParse(submission, out int val)){
+            int? num = HttpContext.Session.GetInt32("Number");
+            int newNum = (int)(num + val);
+            HttpContext.Session.SetInt32("Number", newNum);
+        }
+        
         return RedirectToAction("Dashboard");
     }
 
