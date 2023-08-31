@@ -3,7 +3,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome @Context.Session.GetString("Name")</h1>
+    <h1 class="display-4">Welcome @Context.Session.GetString("Name") <form action="Logout" method="post">
+        <input type="submit" value="Logout"/>
+    </form></h1>
     <hr>
     <p>@Context.Session.GetInt32("Number")</p>
     <div>

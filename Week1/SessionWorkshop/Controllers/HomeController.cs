@@ -23,13 +23,12 @@ public class HomeController : Controller
         return RedirectToAction("Dashboard");
     }
 
-
     // Does the submission work to mod the Number in session
     [HttpGet("Submit")]
     public IActionResult Submit()
     {
         // I don't know how to set a default and then overwrite it
-        HttpContext.Session.SetInt32("Number", (HttpContext.Session.GetInt32("Number")+"###HIDDENINPUTVALUE###"));
+        // HttpContext.Session.SetInt32("Number", (HttpContext.Session.GetInt32("Number")+"###HIDDENINPUTVALUE###"));
         return RedirectToAction("Dashboard");
     }
 
@@ -41,7 +40,7 @@ public class HomeController : Controller
     }
 
     // Clears session and redirects to login page
-    [HttpGet("Logout")]
+    [HttpPost("Logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
