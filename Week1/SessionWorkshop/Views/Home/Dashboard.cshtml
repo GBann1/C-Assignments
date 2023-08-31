@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Context.Session.GetString("Name")</h1>
+    <hr>
+    <p>@Context.Session.GetInt32("Number")</p>
+    <div>
+        <div>
+            <form action="/Submit" method="post">
+                <input type="hidden" value="1"/>
+                <input type="submit" value="+1"/>
+            </form>
+            <form action="/Submit" method="post">
+                <input type="hidden" value="-1"/>
+                <input type="submit" value="-1"/>
+            </form>
+        </div>
+        <div>
+            <form action="/Submit" method="post">
+                <input type="hidden" value="99"/>
+                <input type="submit" value="x2"/>
+            </form>
+            @{
+                Random rand = new Random();
+                int randVal = rand.Next(1,11);
+            }
+            <form action="/Submit" method="post">
+                <input type="hidden" value="@randVal"/>
+                <input type="submit" value="-1"/>
+            </form>
+        </div>
+    </div>
+</div>
