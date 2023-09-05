@@ -74,16 +74,27 @@ PrintEach(Before1000);
 
 // Console.WriteLine("************************************************************");
 IEnumerable<string> Before1000Names = eruptions.Where(entry => entry.Year < 1000).OrderBy(entry => entry.Volcano).Select(entry => entry.Volcano);
+// Loops through and prints each name
 foreach(string name in Before1000Names)
 {
     Console.WriteLine(name);
 }
+// Re-wrote the print each function
+PrintEachName(Before1000Names);
 
 // Helper method to print each item in a List or IEnumerable. This should remain at the bottom of your class!
 static void PrintEach(IEnumerable<Eruption> items, string msg = "")
 {
     Console.WriteLine("\n" + msg);
     foreach (Eruption item in items)
+    {
+        Console.WriteLine(item.ToString());
+    }
+}
+static void PrintEachName(IEnumerable<string> items, string msg = "")
+{
+    Console.WriteLine("\n" + msg);
+    foreach (string item in items)
     {
         Console.WriteLine(item.ToString());
     }
