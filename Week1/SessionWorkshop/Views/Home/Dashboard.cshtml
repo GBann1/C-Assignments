@@ -27,7 +27,11 @@
                 <input type="submit" value="x2"/>
             </form>
             <form action="/Submit" method="post">
-                <input type="hidden" name="submission"  value="randVal"/>
+            @{
+                Random rand = new Random();
+                int randVal = rand.Next(1,11);
+            }
+                <input type="hidden" name="submission"  value="@randVal"/>
                 <input type="submit" value="Random"/>
             </form>
         </div>

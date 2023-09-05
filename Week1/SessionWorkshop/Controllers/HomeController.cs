@@ -40,10 +40,10 @@ public class HomeController : Controller
             HttpContext.Session.SetInt32("Number", newNum);
 
         }else {
-            Random rand = new Random();
-            int randNum = rand.Next(1,11);
-            int newNum = (int)(num + randNum);
-            HttpContext.Session.SetInt32("Number", newNum);
+            // Random rand = new Random();
+            // int randNum = rand.Next(1,11);
+            // int newNum = (int)(num + randNum);
+            // HttpContext.Session.SetInt32("Number", newNum);
         }
         
         return RedirectToAction("Dashboard");
@@ -53,7 +53,7 @@ public class HomeController : Controller
     [HttpGet("Dashboard")]
     public IActionResult Dashboard()
     {
-        // Idk how to make sure something is valid in Session
+        // Validates that a user is in session
         string? name = HttpContext.Session.GetString("Name");
         if (name == null){
             return RedirectToAction("Index");
