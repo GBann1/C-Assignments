@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using LoginAndRegistration.Models;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();  
+builder.Services.AddSession();
 builder.Services.AddDbContext<UserContext>(options => {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
@@ -18,6 +21,8 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseSession();
 
 app.UseAuthorization();
 

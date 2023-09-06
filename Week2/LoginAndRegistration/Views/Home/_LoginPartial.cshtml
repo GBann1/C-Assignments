@@ -1,8 +1,12 @@
 @model Login
-<form asp-action="LoginUser" method="post">
-    <label for="Email">Email:</label>
-    <input asp-for="Email"/>
-    <label for="Password">Password:</label>
-    <input asp-for="Password"/>
+<form asp-action="Login" method="post">
+    <div>
+        <label for="Email">Email:</label>
+        <input asp-for="Email"/>
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input asp-for="Password"/>
+    </div>
     <input type="submit" value="Login"/>
 </form>
