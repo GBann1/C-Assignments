@@ -1,0 +1,8 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.RazorAssemblyInfo.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\LoginAndRegistration\obj\Debug\net7.0\LoginAndRegistration.RazorAssemblyInfo.cs

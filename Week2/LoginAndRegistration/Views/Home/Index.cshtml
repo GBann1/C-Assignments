@@ -4,5 +4,14 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div>
+        <div>
+            <h3>Login</h3>
+            @await Html.PartialAsync("_LoginPartial")
+        </div>
+        <div>
+            <h3>Register</h3>
+            @await Html.PartialAsync("_RegisterUser")
+        </div>
+    </div>
 </div>
