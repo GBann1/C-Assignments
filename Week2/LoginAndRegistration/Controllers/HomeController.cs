@@ -1,18 +1,18 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LoginAndRegistration.Models;
-using Microsoft.AspNetcore.Identity;
-using AspNetCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace LoginAndRegistration.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private UserContext _context;
+    public HomeController(ILogger<HomeController> logger, UserContext context)
     {
         _logger = logger;
+        _context = context;
     }
 
     public IActionResult Index()
@@ -23,12 +23,12 @@ public class HomeController : Controller
     [HttpPost("users/create")]
     public IActionResult Create(User newUser)
     {
-        if(MidelState.IsValid)
+        if(ModelState.IsValid)
         {
             PasswordHasher<User> Hasher = new PasswordHasher<User>();
             newUser.Password = Hasher.HashPassword(newUser, newUser.Password);
             _context.Add(newUser);
-            _context.Savechanges();
+            _context.SaveChanges();
             return RedirectToAction("Success");
         }else {
             return RedirectToAction("Index");
@@ -40,12 +40,12 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpGet("Login")]
+    [HttpPost("Login")]
     public IActionResult Login(Login userLogin)
     {
-        if(ModelState.Isvalid)
+        if(ModelState.IsValid)
         {
-            User? userInDB = _context.users.SingleOrDefault(user => user.userLogin.Email);
+            User? userInDB = _context.Users.SingleOrDefault(user => user.Email == userLogin.Email);
             if(userInDB == null)
             {
                 ModelState.AddModelError("Email","Invalid Email or Password");

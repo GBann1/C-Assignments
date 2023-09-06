@@ -10,20 +10,20 @@
             <div>
                 <div>
                     <label for="Chef">Chef's Name:</label>
-                    <input asp-for="Chef" />
+                    <input asp-for="Chef" value="@Model.Chef"/>
                 </div>
                 <div>
                     <label for="Name">Name:</label>
-                    <input asp-for="Name" />
+                    <input asp-for="Name" value="@Model.Name"/>
                 </div>
                 <div>
                     <label for="Calories">Calories:</label>
-                    <input asp-for="Calories" />
+                    <input asp-for="Calories" value="@Model.Calories"/>
                 </div>
             </div>
             <div>
                 <label for="Tastiness">Tastiness:</label>
-                <select asp-for="Tastiness">
+                <select asp-for="Tastiness" value="@Model.Tastiness">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -33,7 +33,7 @@
             </div>
             <div>
                 <label for="Description">Description:</label>
-                <textarea id="Description" asp-for="Description" rows="10" cols="30"></textarea>
+                <textarea id="Description" asp-for="Description" rows="10" cols="30">@Model.Description</textarea>
             </div>
             <input type="submit" value="submit"/>
         </form>

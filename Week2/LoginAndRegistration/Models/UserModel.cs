@@ -43,7 +43,7 @@ public class UniqueEmailAttribute : ValidationAttribute
         }
         UserContext _context = (UserContext)validationContext.GetService(typeof(UserContext));
 
-        if(_context.users.Any(e => e.Email == value.ToString()))
+        if(_context.Users.Any(e => e.Email == value.ToString()))
         {
             return new ValidationResult("Email must be unique!");
         } else {

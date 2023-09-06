@@ -1,5 +1,14 @@
 @model User
 <form asp-action="RegisterUser" method="post">
-    
+    <label for="FirstName">First Name:</label>
+    <input asp-for="FirstName"/>
+    <label for="LastName">Last Name:</label>
+    <input asp-for="LastName"/>
+    <label for="Email">Email:</label>
+    <input asp-for="Email"/>
+    <label for="Password">Password:</label>
+    <input asp-for="Password"/>
+    <label for="ConfirmPassword">Confirm Password:</label>
+    <input asp-for="ConfirmPassword"/>
     <input type="submit" value="Register"/>
 </form>

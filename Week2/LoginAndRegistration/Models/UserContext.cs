@@ -4,6 +4,6 @@ using Microsoft.EntityFrameworkCore;
 namespace LoginAndRegistration.Models;
 public class UserContext : DbContext
 {
-    public UserContext(DbContextOptions options) : base(options) {}
-    public DbSet<User> users {get;set;}
+    public UserContext(DbContextOptions<UserContext> options) : base(options) {}
+    public DbSet<User> Users {get;set;}
 }

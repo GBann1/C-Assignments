@@ -63,9 +63,9 @@ public class HomeController : Controller
     }
 
     [HttpPost("dishes/{DishId}/update")]
-    public IActionResult UpdateDish(int DishId, Dish updateDish)
+    public IActionResult UpdateDish(int dishId, Dish updateDish)
     {
-        Dish? OldDish = _context.dishes.SingleOrDefault(dish => dish.DishId == DishId);
+        Dish? OldDish = _context.dishes.SingleOrDefault(dish => dish.DishId == dishId);
 
         if(ModelState.IsValid)
         {
@@ -76,10 +76,15 @@ public class HomeController : Controller
             OldDish.Description = updateDish.Description;
             OldDish.UpdatedAt = DateTime.Now;
             _context.SaveChanges();
-            return RedirectToAction("ViewDish",OldDish);
+            return RedirectToAction("ViewDish",new {
+                id = dishId
+            });
         }
         else{
-            return View("EditDish",OldDish);
+            // Passes in old data
+            // return View("EditDish",OldDish);
+            // Passes in attempted data changes
+            return View("EditDish",updateDish);
         }
     }
 
