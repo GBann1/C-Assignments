@@ -54,11 +54,16 @@ public class HomeController : Controller
     public IActionResult EditDish(int DishId)
     {
         Dish? DishToEdit = _context.dishes.SingleOrDefault(dish => dish.DishId == DishId);
-        return View(DishToEdit);
+        if(DishToEdit != null)
+        {
+            return View(DishToEdit);
+        }else{
+            return RedirectToAction("Index");
+        }
     }
 
     [HttpPost("dishes/{DishId}/update")]
-    public IActionResult UpdateDish(Dish updateDish, int DishId)
+    public IActionResult UpdateDish(int DishId, Dish updateDish)
     {
         Dish? OldDish = _context.dishes.SingleOrDefault(dish => dish.DishId == DishId);
 
