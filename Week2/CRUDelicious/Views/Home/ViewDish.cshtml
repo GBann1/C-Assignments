@@ -14,7 +14,6 @@
     <form asp-action="DeleteDish" asp-route-DishId="@Model.DishId" method="post">
         <input type="submit" value="Delete"/>
     </form>
-    <form asp-action="EditDish" asp-route-DishId="@Model.DishId">
-        <input type="submit" value="Edit"/>
-    </form>
+    
+    <button><a href="/dishes/@Model.DishId/edit">Edit</a></button>
 </div>
