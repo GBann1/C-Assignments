@@ -1,0 +1,23 @@
+@model List<Wedding>
+@await Html.PartialAsync("_navbar")
+
+<table>
+    <thead>
+        <tr>
+            <td>WeddingOf</td>
+            <td>Date</td>
+            <td>Guest Count</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Wedding wedd in Model){
+            <tr>
+                <td>@wedd.WedderOne & @wedd.WedderTwo</td>
+                <td>@wedd.Date.ToString("MMM d yyyy")</td>
+                <td>@wedd.Guests.Count</td>
+                <td>REEEEEEEEEE</td>
+            </tr>
+        }
+    </tbody>
+</table>

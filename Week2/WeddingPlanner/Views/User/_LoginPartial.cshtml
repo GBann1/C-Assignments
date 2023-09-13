@@ -1,0 +1,15 @@
+@model Login
+<form asp-action="Login" asp-controller="User" method="post">
+    <div>
+        <label for="Email">Email:</label>
+        <input asp-for="LogEmail"/>
+        <span asp-validation-for="LogEmail"></span>
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input asp-for="LogPassword"/>
+        <span asp-validation-for="LogPassword"></span>
+
+    </div>
+    <input type="submit" value="Login"/>
+</form>

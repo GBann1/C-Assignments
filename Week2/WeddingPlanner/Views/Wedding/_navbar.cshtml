@@ -1,0 +1,10 @@
+<div>
+    @Context.Session.GetString("UserFirstName")
+    <div>
+        <a asp-action="Dashboard" asp-controller="Wedding">Home</a>
+        <a asp-action="AddWedding" asp-controller="Wedding">Plan A Wedding</a>
+        <form asp-action="Logout" asp-controller="User">
+            <input type="submit" value="Logout"/>
+        </form>
+    </div>
+</div>
