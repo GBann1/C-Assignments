@@ -1,4 +1,4 @@
-@model DishChefModel
+@model Dish
 
 <h1>Add a dish</h1>
 <hr>
@@ -7,27 +7,28 @@
         <div>
             <div>
                 <label for="Name">Name of Dish</label><br>
-                <input asp-for="NewDish.Name" />
+                <input asp-for="Name" />
             </div>
             <div>
                 <label for="Calories"># of Calories</label><br>
-                <input asp-for="NewDish.Calories" />
+                <input asp-for="Calories" />
             </div>
         </div>
         <div>
             <label for="ChefID">Chef's Name</label>
-            @Html.DropDownListFor(model => model.NewDish.ChefID, new SelectList(Model.Chefs,"ChefID", "FullName"),"Select a Chef")
-            @* <select asp-for="NewDish.ChefID" asp-items="new SelectList(Model.Chefs, ChefID,FirstName)">
+            @* @Html.DropDownListFor(model => model.NewDish.ChefID, new SelectList(Model.Chefs,"ChefID", "FullName"),"Select a Chef") *@
+            <select asp-for="ChefID" asp-items="ViewBag.CookList">
                 <option value="">Select a Chef</option>
-            </select> *@
+            </select>
         </div>
         <div>
             <label for="Tastiness">Tastiness</label>
-            <select asp-for="NewDish.Tastiness">
+            <select asp-for="Tastiness">
                 @for(int i=1;i<6;i++){
                     <option value="@i">@i</option>
                 }
             </select>
         </div>
     </div>
+    <input type="submit" value="Submit"/>
 </form>

@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
 using ChefsNDishes.Models;
 
 namespace ChefsDishes.Controllers;
@@ -21,7 +22,7 @@ public class ChefController : Controller
     [HttpGet("")]
     public IActionResult ViewChefs()
     {
-        List<Chef> Cooks = _context.Chefs.ToList();
+        List<Chef> Cooks = _context.Chefs.Include(c => c.AllDishes).ToList();
         return View(Cooks);
     }
 

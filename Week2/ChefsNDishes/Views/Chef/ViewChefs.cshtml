@@ -1,6 +1,4 @@
 @model List<Chef>
-@* Stolen straight out of Owens code and no idea what it does *@
-@inject MyContext _context
 @using Microsoft.EntityFrameworkCore; 
 
 <h1>Check out our roster of chefs!</h1>
@@ -23,12 +21,7 @@
                         @age
                     }
                 </td>
-                <td>@{
-                        int numDishes = _context.Chefs.Include(chef => chef.AllDishes).Single(chef => chef.ChefID == cook.ChefID).AllDishes.Count;
-                        @numDishes;
-                    }
-
-                </td>
+                <td>@cook.AllDishes.Count</td>
             </tr>
         };
     </tbody>

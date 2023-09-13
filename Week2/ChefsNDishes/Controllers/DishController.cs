@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Filters;
 using ChefsNDishes.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
+// using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChefsNDishes.Controllers;
@@ -23,34 +23,32 @@ public class DishController : Controller
     [HttpGet("Dishes/View")]
     public IActionResult ViewDishes()
     {
-        List<Dish> dishes = _context.Dishes.ToList();
+        List<Dish> dishes = _context.Dishes.Include(dish => dish.Cook).ToList();
         return View(dishes);
     }
 
     [HttpGet("Dishes/New")]
     public IActionResult NewDish()
     {
-        DishChefModel newModel = new DishChefModel();
-        newModel.NewDish = new Dish();
-        newModel.Chefs = _context.Chefs.ToList();
-        return View(newModel);
+        List<Chef> cooks = _context.Chefs.ToList();
+        ViewBag.CookList = new SelectList(cooks, "ChefID", "FirstName");
+        return View();
     }
 
     [HttpPost("Dishes/Write")]
-    public IActionResult WriteDish(DishChefModel newModel)
+    public IActionResult WriteDish(Dish newModel)
     {
         if(ModelState.IsValid)
         {
             // Grab Chef ID
-            int CookID = newModel.NewDish.ChefID;
+            int CookID = newModel.ChefID;
             // Assigns Dish to Chef/Cook
-            newModel.NewDish.Cook = _context.Chefs.FirstOrDefault(chef => chef.ChefID == CookID);
+            newModel.Cook = _context.Chefs.FirstOrDefault(chef => chef.ChefID == CookID);
             // write & save changes
-            _context.Add(newModel.NewDish);
+            _context.Add(newModel);
             _context.SaveChanges();
-            return RedirectToAction("Home");
+            return RedirectToAction("ViewDishes");
         }
-        newModel.Chefs = _context.Chefs.ToList();
         return View("AddDish", newModel);
     }
 }
