@@ -20,27 +20,37 @@ public class DishController : Controller
         _context = context;
     }
 
-    [HttpGet("Dishes/New")]
-    public IActionResult AddDish()
+    [HttpGet("Dishes/View")]
+    public IActionResult ViewDishes()
     {
-        return View();
+        List<Dish> dishes = _context.Dishes.ToList();
+        return View(dishes);
+    }
+
+    [HttpGet("Dishes/New")]
+    public IActionResult NewDish()
+    {
+        DishChefModel newModel = new DishChefModel();
+        newModel.NewDish = new Dish();
+        newModel.Chefs = _context.Chefs.ToList();
+        return View(newModel);
     }
 
     [HttpPost("Dishes/Write")]
-    public IActionResult WriteDish(Dish newDish)
+    public IActionResult WriteDish(DishChefModel newModel)
     {
         if(ModelState.IsValid)
         {
             // Grab Chef ID
-            int CookID = newDish.ChefID;
+            int CookID = newModel.NewDish.ChefID;
             // Assigns Dish to Chef/Cook
-            newDish.Cook = _context.Chefs.FirstOrDefault(chef => chef.ChefID == CookID);
+            newModel.NewDish.Cook = _context.Chefs.FirstOrDefault(chef => chef.ChefID == CookID);
             // write & save changes
-            _context.Add(newDish);
+            _context.Add(newModel.NewDish);
             _context.SaveChanges();
             return RedirectToAction("Home");
-        } else {
-            return View("AddDish");
         }
+        newModel.Chefs = _context.Chefs.ToList();
+        return View("AddDish", newModel);
     }
 }

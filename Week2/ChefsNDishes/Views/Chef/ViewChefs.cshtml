@@ -1,0 +1,35 @@
+@model List<Chef>
+@* Stolen straight out of Owens code and no idea what it does *@
+@inject MyContext _context
+@using Microsoft.EntityFrameworkCore; 
+
+<h1>Check out our roster of chefs!</h1>
+<hr>
+<table>
+    <thead>
+        <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td># of Dishes</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Chef cook in Model)
+        {
+            <tr>
+                <td>@cook.FirstName @cook.LastName</td>
+                <td>@{
+                        int age = DateTime.Today.Year - cook.BirthDate.Year;
+                        @age
+                    }
+                </td>
+                <td>@{
+                        int numDishes = _context.Chefs.Include(chef => chef.AllDishes).Single(chef => chef.ChefID == cook.ChefID).AllDishes.Count;
+                        @numDishes;
+                    }
+
+                </td>
+            </tr>
+        };
+    </tbody>
+</table>

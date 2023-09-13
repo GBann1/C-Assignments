@@ -1,0 +1,33 @@
+@model DishChefModel
+
+<h1>Add a dish</h1>
+<hr>
+<form asp-action="WriteDish" asp-controller="Dish" method="post">
+    <div class="d-flex">
+        <div>
+            <div>
+                <label for="Name">Name of Dish</label><br>
+                <input asp-for="NewDish.Name" />
+            </div>
+            <div>
+                <label for="Calories"># of Calories</label><br>
+                <input asp-for="NewDish.Calories" />
+            </div>
+        </div>
+        <div>
+            <label for="ChefID">Chef's Name</label>
+            @Html.DropDownListFor(model => model.NewDish.ChefID, new SelectList(Model.Chefs,"ChefID", "FullName"),"Select a Chef")
+            @* <select asp-for="NewDish.ChefID" asp-items="new SelectList(Model.Chefs, ChefID,FirstName)">
+                <option value="">Select a Chef</option>
+            </select> *@
+        </div>
+        <div>
+            <label for="Tastiness">Tastiness</label>
+            <select asp-for="NewDish.Tastiness">
+                @for(int i=1;i<6;i++){
+                    <option value="@i">@i</option>
+                }
+            </select>
+        </div>
+    </div>
+</form>

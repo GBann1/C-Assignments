@@ -16,24 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Chef/AddChef.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxBZGRDaGVmLmNzaHRtbA==
+[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Chef/NewChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxOZXdDaGVmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Chef/Landing.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxMYW5kaW5nLmNzaHRtbA==
+[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Chef/ViewChefs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxWaWV3Q2hlZnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Chef/WriteChef.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxXcml0ZUNoZWYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Dish/AddDish.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxBZGREaXNoLmNzaHRtbA==
+[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Dish/NewDish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxOZXdEaXNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Dish/WriteDish.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxXcml0ZURpc2guY3NodG1s
+[C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Dish/ViewDishes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxWaWV3RGlzaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GT Bannon/C-Sharp Stack/Assignments/Week2/ChefsNDishes/Views/Shared/_ValidationScriptsPartial.cshtml]
