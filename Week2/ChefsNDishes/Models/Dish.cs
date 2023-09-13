@@ -11,7 +11,7 @@ public class Dish
     public string Name {get; set;}
 
     [Required]
-    [Min(1, ErrorMessage = "Must have calories")]
+    [Range(1, Int32.MaxValue, ErrorMessage = "Must have calories")]
     public int Calories {get; set;}
 
     [Required]
@@ -23,5 +23,5 @@ public class Dish
 
     // Now the part I still don't fully understand
     public int ChefID {get; set;}
-    public Chefs? Cook {get; set;}
+    public Chef? Cook {get; set;}
 }

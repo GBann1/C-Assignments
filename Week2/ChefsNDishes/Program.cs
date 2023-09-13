@@ -6,7 +6,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();  
 builder.Services.AddSession();
 //              ######## CHANGE TO CONTEXT NAME #########
-builder.Services.AddDbContext<DishContext>(options => {
+builder.Services.AddDbContext<MyContext>(options => {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 // Add services to the container.

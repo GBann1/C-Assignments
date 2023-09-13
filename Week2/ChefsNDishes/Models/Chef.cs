@@ -24,7 +24,7 @@ public class Chef
     public DateTime CreatedAt {get;set;} = DateTime.Now;
     public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
-    public List<Dish> AllDishes {get; set;} = new List<DigitShapes>();
+    public List<Dish> AllDishes {get; set;} = new List<Dish>();
 }
 
 public class DateValidation : ValidationAttribute
