@@ -1,0 +1,8 @@
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.csproj.AssemblyReference.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.AssemblyInfoInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.AssemblyInfo.cs
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.csproj.CoreCompileInputs.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.RazorAssemblyInfo.cache
+C:\Users\GT Bannon\C-Sharp Stack\Assignments\Week2\ChefsNDishes\obj\Debug\net7.0\ChefsNDishes.RazorAssemblyInfo.cs
