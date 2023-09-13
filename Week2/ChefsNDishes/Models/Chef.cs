@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace ChefsNDishes.Models;
 
-public class Chefs
+public class Chef
 {
     [Key]
     public int ChefID {get; set;}
