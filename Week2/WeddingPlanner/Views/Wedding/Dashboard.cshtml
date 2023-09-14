@@ -1,6 +1,6 @@
 @model List<Wedding>
+@{int UUID = (int)Context.Session.GetInt32("UserID");}
 @await Html.PartialAsync("_navbar")
-
 <table>
     <thead>
         <tr>
@@ -12,11 +12,32 @@
     </thead>
     <tbody>
         @foreach(Wedding wedd in Model){
+            bool isGoing = wedd.Guests.Any(rsvp => rsvp.UserID == UUID);
             <tr>
-                <td>@wedd.WedderOne & @wedd.WedderTwo</td>
+                <td><a asp-action="ViewWedding" asp-controller="Wedding" asp-route-id="@wedd.WeddingID">@wedd.WedderOne & @wedd.WedderTwo</a></td>
                 <td>@wedd.Date.ToString("MMM d yyyy")</td>
                 <td>@wedd.Guests.Count</td>
-                <td>REEEEEEEEEE</td>
+                <td>@if(wedd.UserID == UUID)
+                    {
+                        <form asp-action="Delete" asp-controller="Wedding" asp-route-id="@wedd.WeddingID" method="post">
+                            <input type="submit" value="Delete"/>
+                        </form>
+                    }else {
+                        <form asp-action="AddGuest" asp-controller="Wedding" asp-route-id="@wedd.WeddingID" method="post">
+                            @* <button>@(isGoing?"Not Going":"Going")</button> *@
+                            <button class="btn btn-primary">@(isGoing?"UnRSVP":"RSVP")</button>
+                            @* <input type="submit" value='@(isGoing ? "Going" : "Not Going")'/>*@
+                            @* @if (isGoing)
+                            {
+                                <input type="submit" name="submit_button" value="Going" />
+                            }
+                            else
+                            {
+                                <input type="submit" name="submit_button" value="Not Going" />
+                            } *@
+                        </form>
+                    }
+                    
             </tr>
         }
     </tbody>

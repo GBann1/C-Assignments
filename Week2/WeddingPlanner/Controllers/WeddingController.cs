@@ -44,4 +44,50 @@ public class WeddingController : Controller
             return View("AddWedding");
         }
     }
+
+    [HttpGet("wedding/view/{id}")]
+    public IActionResult ViewWedding(int id )
+    {
+        Wedding? wedd = _context.Weddings.Include(p => p.Planner)
+                                .Include(p => p.Guests)
+                                .ThenInclude(mid => mid.User)
+                                .FirstOrDefault(p => p.WeddingID == id);
+        if(wedd == null)
+        {
+            return RedirectToAction("Dashboard");
+        }
+        return View(wedd);
+    }
+
+    [HttpPost("wedding/{id}/rsvp")]
+    public IActionResult AddGuest(int id)
+    {
+        int UUID = (int)HttpContext.Session.GetInt32("UserID");
+        UserWedding going = _context.UserWeddings.FirstOrDefault(rsvp => rsvp.WeddingID == id && rsvp.UserID == UUID);
+        if(going == null)
+        {
+            UserWedding isGoing = new()
+            {
+                UserID = UUID,
+                WeddingID = id
+            };
+            _context.Add(isGoing);
+        }else{
+            _context.Remove(going);
+        }
+        _context.SaveChanges();
+        return RedirectToAction("Dashboard");
+    }
+
+    [HttpPost("wedding/{id}/delete")]
+    public IActionResult Delete(int id)
+    {
+        Wedding? deleteWedding = _context.Weddings.SingleOrDefault(wedd => wedd.WeddingID == id);
+        if(deleteWedding != null)
+        {
+            _context.Remove(deleteWedding);
+            _context.SaveChanges();
+        }
+        return RedirectToAction("Dashboard");
+    }
 }
