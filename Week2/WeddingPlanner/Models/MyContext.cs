@@ -1,8 +1,7 @@
 #pragma warning disable CS8618
-using System.Diagnostics;
+// DbSet & Context is defined
 using Microsoft.EntityFrameworkCore;
-using WeddingPlanner.Models;
-
+// Either using or namespace for the models
 namespace WeddingPlanner.Models;
 
 public class MyContext : DbContext

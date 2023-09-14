@@ -29,6 +29,7 @@ public class Wedding
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
+    // Foreign Key for the user table
     public int UserID {get; set;}
     public User? Planner {get; set;}
 

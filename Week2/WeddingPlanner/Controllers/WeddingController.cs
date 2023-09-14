@@ -21,7 +21,7 @@ public class WeddingController : Controller
     [HttpGet("wedding/dashboard")]
     public IActionResult Dashboard()
     {
-        List<Wedding> AllWeddings = _context.Weddings.Include(wedd => wedd.Planner).ToList();
+        List<Wedding> AllWeddings = _context.Weddings.Include(wedd => wedd.Planner).Include(wedd => wedd.Guests).ToList();
         return View(AllWeddings);
     }
 
@@ -50,6 +50,7 @@ public class WeddingController : Controller
     {
         Wedding? wedd = _context.Weddings.Include(p => p.Planner)
                                 .Include(p => p.Guests)
+                                // This reaches into the MIDdle table to grab the nested value of User
                                 .ThenInclude(mid => mid.User)
                                 .FirstOrDefault(p => p.WeddingID == id);
         if(wedd == null)

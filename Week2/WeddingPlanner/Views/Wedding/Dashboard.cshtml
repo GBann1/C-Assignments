@@ -24,20 +24,10 @@
                         </form>
                     }else {
                         <form asp-action="AddGuest" asp-controller="Wedding" asp-route-id="@wedd.WeddingID" method="post">
-                            @* <button>@(isGoing?"Not Going":"Going")</button> *@
-                            <button class="btn btn-primary">@(isGoing?"UnRSVP":"RSVP")</button>
-                            @* <input type="submit" value='@(isGoing ? "Going" : "Not Going")'/>*@
-                            @* @if (isGoing)
-                            {
-                                <input type="submit" name="submit_button" value="Going" />
-                            }
-                            else
-                            {
-                                <input type="submit" name="submit_button" value="Not Going" />
-                            } *@
+                            @* Yes, the linter isn't happy, but after compiling this won't be an issue *@
+                            <input type="submit" value="@(isGoing ? "Going" : "Not Going")"/>
                         </form>
                     }
-                    
             </tr>
         }
     </tbody>

@@ -24,6 +24,7 @@ public class UserController : Controller
     }
 
     [HttpPost("user/write")]
+    // Register partial
     public IActionResult WriteUser(User newUser)
     {
         if(ModelState.IsValid)
@@ -32,6 +33,7 @@ public class UserController : Controller
             newUser.Password = hasher.HashPassword(newUser, newUser.Password);
             _context.Add(newUser);
             _context.SaveChanges();
+            // write user into session on registration
             HttpContext.Session.SetInt32("UserID", newUser.UserID);
             HttpContext.Session.SetString("UserFirstName", newUser.FirstName);
             return RedirectToAction("Dashboard", "Wedding");
@@ -58,8 +60,10 @@ public class UserController : Controller
                 ModelState.AddModelError("LogPassword", "Invalid Email or Password");
                 return View("Landing");
             }
+            // Add user on login
             HttpContext.Session.SetInt32("UserID", userInDB.UserID);
             HttpContext.Session.SetString("UserFirstName", userInDB.FirstName);
+                                // Route from this controller
             return RedirectToAction("Dashboard", "Wedding");
         }else{
             return View("Landing");
