@@ -78,7 +78,7 @@ namespace WeddingPlanner.Migrations
 
                     b.HasIndex("WeddingID");
 
-                    b.ToTable("UserWeddings");
+                    b.ToTable("");
                 });
 
             modelBuilder.Entity("WeddingPlanner.Models.Wedding", b =>
