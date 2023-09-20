@@ -26,11 +26,13 @@ public class User
 
     [Required]
     [MinLength(8)]
+    [DataType(DataType.Password)]
     public string Password {get;set;}
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     [NotMapped]
+    [DataType(DataType.Password)]
     [Compare("Password")]
     public string ConfirmPassword {get;set;}
 

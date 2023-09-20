@@ -10,8 +10,6 @@ builder.Services.AddSession();
 builder.Services.AddDbContext<MyContext>(options => {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
-// Add services to the container.
-builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
